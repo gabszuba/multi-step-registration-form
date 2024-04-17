@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:multi_step_form/view/signupstepOne.dart';
+import 'package:multi_step_form/provider/planProvider.dart';
+import 'package:multi_step_form/view/signupStepOne.dart';
+import 'package:multi_step_form/view/signupStepTwo.dart';
+import 'package:multi_step_form/view/signupStepThree.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,12 +14,17 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Formulário",
-      theme: ThemeData(fontFamily: 'Ubuntu'),
-      routes: {
-        '/': (context) => const StepOne(),
-      },
+    return MultiProvider(
+      providers: [ChangeNotifierProvider(create: (context) => PlanProvider())],
+      child: MaterialApp(
+        title: "Formulário",
+        theme: ThemeData(fontFamily: 'Ubuntu'),
+        routes: {
+          '/': (context) => const SignupStepOne(),
+          '/second-step': (context) => const StepTwo(),
+          '/third-step': (context) => const StepThree()
+        },
+      ),
     );
   }
 }

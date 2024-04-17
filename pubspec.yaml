@@ -10,6 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_svg: ^2.0.5
+  mask_text_input_formatter: ^2.9.0
+  provider: ^6.1.2
 
 dev_dependencies:
   flutter_test:
