@@ -67,7 +67,8 @@ class _StepTwoState extends State<StepTwo> {
             const Text(
               "Selecione seu plano",
               style: TextStyle(
-                fontSize: 24,
+                fontSize: 22,
+                fontWeight: FontWeight.bold,
                 color: Color(0xFE07274e),
               ),
             ),
