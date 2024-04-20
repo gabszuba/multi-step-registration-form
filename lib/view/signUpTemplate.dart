@@ -16,7 +16,6 @@ class SignupTemplate extends StatelessWidget {
         children: [
           _bgBar(),
           _formContainer(),
-          //_pageNumber()
         ],
       ),
     );
@@ -25,7 +24,7 @@ class SignupTemplate extends StatelessWidget {
   Widget _formContainer() {
     return Center(
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 40.0, vertical: 50.0),
+        padding: const EdgeInsets.symmetric(horizontal: 40.0, vertical: 40.0),
         width: 320,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
@@ -48,27 +47,4 @@ class SignupTemplate extends StatelessWidget {
       ),
     );
   }
-
-
-  /*Widget _pageNumber(){
-    return Positioned (
-      top: 15.0,
-      child:
-          ToggleButtons(
-            children: [
-              Text('1'),
-              Text('2'),
-              Text('3')
-            ],
-            isSelected: _selectedPage,
-            color: Colors.white,
-            selectedColor: Color.fromARGB(255, 2, 41, 90),
-            fillColor: Color.fromARGB(255, 190, 226, 250),
-            borderRadius: BorderRadius.circular(30.0),
-            borderColor: Colors.white,
-            selectedBorderColor: Color.fromARGB(255, 190, 226, 250),
-            onPressed: () {}
-          ),
-      ),
-  }*/
 }

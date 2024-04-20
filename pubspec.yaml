@@ -23,6 +23,7 @@ flutter:
   
   assets:
     - assets/bg-bar.svg
+    - assets/icon-thank-you.svg
 
   fonts:
     - family: Ubuntu
