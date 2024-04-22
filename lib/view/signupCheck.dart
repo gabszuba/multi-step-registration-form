@@ -25,7 +25,7 @@ class FinalStep extends StatelessWidget {
               fontWeight: FontWeight.bold,
               color: Color(0xFE07274e),
             ),
-          ),
+          ),  
           const SizedBox(height: 10),
           const Text(
             "Obrigada por comprar nosso produto. Caso tenha dúvidas ou problemas com a plataforma, entre em contato com o Fale Conosco.",
